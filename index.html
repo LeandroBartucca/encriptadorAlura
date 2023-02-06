@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/img/llavecript.png">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        
+        <section class="secciones">
+            <textarea class="text-area" id="text-area2" cols="30" rows="10" onkeypress="validarNumeros(event)" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <button class="pegar" onclick=" pegarDelPortapapeles()">Pegar Texto</button>
+            </div>
+            <div>
+                <h6 class="informacion"> <img src="./img/info.png" alt="info-cartel"> Se formateará a letras minúsculas y sin acento. No ingresar números.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="secciones">
+            <textarea class="mensaje" id="mensaje2" cols="20" rows="10" readonly="readonly"> </textarea>
+            <button class="reset" onclick="reset()"> <img src="./img/reset.png" alt="Resetear texto"></button>
+                <div>
+                <button class="copiar" onclick="copiarAlPortapapeles()">Copiar Texto</button>
+                </div>
+                    <div id="texto-copiado"></div>
+                    <div id="datos">
+                        <h5>Realizado por Leandro Bartucca<a href="https://www.linkedin.com/in/leandro-bartucca/"> <img id="img-linkedin" src="./img/linkedin.png"></a></h5>
+                    </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <canvas>
+            
+        </canvas>
+    </footer>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
