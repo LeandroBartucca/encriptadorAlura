@@ -61,7 +61,7 @@ function desencriptar(stringDesencriptada){
 function reset(){
     textArea.value = "";
     mensaje.value = "";
-    mensaje.style.backgroundImage = "url(/img/encriptado-de-datos.png)";
+    mensaje.style.backgroundImage = "url(./img/encriptado-de-datos.png)";
 }
 
 async function copiarAlPortapapeles() {
