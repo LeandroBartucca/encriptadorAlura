@@ -21,6 +21,8 @@ body {
 
 canvas {
     display: block;
+    height: 600px;
+    width: 2000px;
 }
 
 /* Estilos para el header */
